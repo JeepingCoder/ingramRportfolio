@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/Hannah.png";
+
 import {
   FaBars,
   FaTimes,
@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import Logo from "../assets/Hannah.png";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -14,8 +15,9 @@ const Navbar = () => {
   const handleClick = () => setNavi(!navi);
 
   return (
-    <div>
+    
     <div className="z-50 fixed w-full h-[150px] flex justify-between items-center px-4 bg-[#333333] text-[#AD8F18] text 2-xl">
+     <div>   
       <a href=".../components/home.jsx">
         <img
           className="rounded-full"
@@ -24,6 +26,7 @@ const Navbar = () => {
           style={{ width: "155px" }}
         />
       </a>
+    </div>
       <div>
         <ul className="md:flex">
           <li>
@@ -47,7 +50,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    
 
     <div onCLick={handleClick} className="md:hidden z-20">
         {!navi? <FaBars /> : <FaTimes />}
