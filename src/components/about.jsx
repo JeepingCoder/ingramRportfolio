@@ -9,7 +9,7 @@ const About = () => {
         <div name="about" className="bg-[#3c1414] text-gray-500 w-full h-screen ">
             <div className="w-full h-full flex flex-col justify-center items-center">
                 <div className="sm-text-right end-0 pb-8 pl-4">
-                    <p className="border-[#ad8f18] inline-border-b-4 text-4xl font-bold">About Me ~</p>
+                    <p className="text-4xl font-bold inline-border-b-4  border-[#ad8f18]  ">About Me ~</p>
                     <h1 className="py-2 text-2xl">A little about me!</h1>
                 </div>
                 <div>
